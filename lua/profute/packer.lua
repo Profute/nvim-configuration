@@ -12,4 +12,26 @@ return require('packer').startup(function(use)
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-end)  
+
+  use ({
+	  "folke/tokyonight.nvim",
+	  as = 'tokyonight',
+	  config = function()
+		  vim.cmd[[colorscheme tokyonight-night]]
+	  end
+  })
+
+  use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use ('nvim-treesitter/playground')
+
+  use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
+  use {
+	  "ThePrimeagen/harpoon",
+	  branch = "harpoon2",
+	  requires = { {"nvim-lua/plenary.nvim"} }
+  }
+
+  use "mbbill/undotree"
+
+  use "tpope/vim-fugitive"
+end)
