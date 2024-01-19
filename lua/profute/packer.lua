@@ -36,8 +36,9 @@ return require('packer').startup(function(use)
     --History of Undos (<leader><F5>)
     use "mbbill/undotree"
 
-    --Git functionality directly from vim terminal
+    --Git functionality
     use "tpope/vim-fugitive"
+    use 'lewis6991/gitsigns.nvim'
 
     --lsp-zero and its configuration
     use {
@@ -67,8 +68,22 @@ return require('packer').startup(function(use)
             { 'rafamadriz/friendly-snippets' },
         }
     }
-
+    
+    -- FileTree
+    use 'nvim-tree/nvim-tree.lua'
     --Icons
-    --use 'nvim-tree/nvim-web-devicons'
+    use 'nvim-tree/nvim-web-devicons'
 
+    -- Pairs brackets, braces, etc. automatically
+    use 'https://github.com/windwp/nvim-autopairs'
+
+    -- Show Keybindings
+   use {
+        "folke/which-key.nvim",
+        config = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+            require("which-key").setup {}
+        end
+    }
 end)

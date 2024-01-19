@@ -1,6 +1,10 @@
 ## General
 This is my personal [Neovim](https://github.com/neovim/neovim) configurartion, which includes different extensions/projects and different keymaps to tailor Neovim to my liking.
 
+## Requirements
+  -   A C compiler
+    - For Windows, I used Zig
+    - For Linux, there is a greater variety, so use whatever
 ## Colourscheme: 
   [Tokyo Night](https://github.com/folke/tokyonight.nvim)
 
@@ -24,4 +28,12 @@ This is my personal [Neovim](https://github.com/neovim/neovim) configurartion, w
     - Required to use lsp-zero
   - [Mason](https://github.com/williamboman/mason.nvim)
     - Allows for additional LSP's, DAP's, linters & formatters to be installed 
-
+  - [Nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
+    - File explorer
+  - [Web-dev-icons](https://github.com/nvim-tree/nvim-web-devicons)
+    - Icons for nvim-tree
+  - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+  - [Auto-pairs](https://github.com/windwp/nvim-autopairs)
+    - Auto-pairs braces, brackets, parenthesis, etc.
+  - [Which-key](https://github.com/folke/which-key.nvim)
+    - Helpful extension for completing keybindings
