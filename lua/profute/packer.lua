@@ -75,10 +75,13 @@ return require('packer').startup(function(use)
     use 'nvim-tree/nvim-web-devicons'
 
     -- Pairs brackets, braces, etc. automatically
-    use 'https://github.com/windwp/nvim-autopairs'
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }   
 
     -- Show Keybindings
-   use {
+    use {
         "folke/which-key.nvim",
         config = function()
             vim.o.timeout = true

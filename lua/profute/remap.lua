@@ -1,6 +1,11 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+-- save file
+vim.keymap.set("n", "<leader>s", "<cmd>:w<CR>", { silent = true })
+-- Copy all
+vim.keymap.set("n", "<C-c>", "<cmd> %y+ <CR>")
+
 -- moves highlighted lines up or down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -24,21 +29,21 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
--- This is going to get me cancelled
-vim.keymap.set("i", "<C-c>", "<Esc>")
-
+-- Q -> no operations
 vim.keymap.set("n", "Q", "<nop>")
 -- switch between projects
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
+--[[
 vim.keymap.set("n", "<C-s>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-a>", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>s", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>a", "<cmd>lprev<CR>zz")
+--]]
 
 -- replace letter you were on
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>R", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 -- translates file into something that is executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
