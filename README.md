@@ -41,3 +41,6 @@ This is my personal [Neovim](https://github.com/neovim/neovim) configurartion, w
     - Auto-pairs braces, brackets, parenthesis, etc.
   - [Which-key](https://github.com/folke/which-key.nvim)
     - Helpful extension for completing keybindings
+  - [Lualine](https://github.com/nvim-lualine/lualine.nvim)
+    - Highlighting of cmd
+
