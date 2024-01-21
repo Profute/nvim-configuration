@@ -2,9 +2,13 @@
 This is my personal [Neovim](https://github.com/neovim/neovim) configurartion, which includes different extensions/projects and different keymaps to tailor Neovim to my liking.
 
 ## Requirements
-  -   A C compiler
+  - A C compiler
     - For Windows, I used Zig
     - For Linux, there is a greater variety, so use whatever
+  - A [Nerd Font](https://www.nerdfonts.com)
+    - I personally used Inconsolata LGC Nerd Font
+    - Don't forget to set change the font in your termeinal to that from Nerd Font
+
 ## Colourscheme: 
   [Tokyo Night](https://github.com/folke/tokyonight.nvim)
 
