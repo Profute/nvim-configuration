@@ -1,14 +1,20 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+vim.keymap.set("n", "<leader><leader>", function() vim.cmd("so") end)
+
 -- save file
-vim.keymap.set("n", "<leader>s", "<cmd>:w<CR>", { silent = true })
+vim.keymap.set("n", "<leader>s", "<cmd> w <CR>", { silent = true })
 -- Copy all
 vim.keymap.set("n", "<C-c>", "<cmd> %y+ <CR>")
 
 -- moves highlighted lines up or down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- indents lines inwards & outwards
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
 
 -- keeps cursor at the start of the line when deleting
 vim.keymap.set("n", "J", "mzJ`z")
@@ -23,7 +29,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- next greatest remap ever : asbjornHaland
---require("profute")
 -- yanks highlighted code to clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
@@ -49,9 +54,11 @@ vim.keymap.set("n", "<leader>R", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- translates file into something that is executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
---vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>");
---vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
+vim.keymap.set("n", "<S-t>", "<cmd> vsplit <CR>")
 
-vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
-end)
+-- opens a terminal
+--vim.keymap.set("n", "<S-t>", "<cmd> vsplit <cmd> term <CR>")
+
+
+--vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>");
+
