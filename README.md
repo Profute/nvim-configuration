@@ -44,3 +44,16 @@ This is my personal [Neovim](https://github.com/neovim/neovim) configurartion, w
   - [Lualine](https://github.com/nvim-lualine/lualine.nvim)
     - Highlighting of cmd
 
+## Debugger
+The plugin used to support debugging is [DAP](https://github.com/mfussenegger/nvim-dap) with the following extensions and supported languages: 
+(Note that one must manually add languages to support, see [DAP-Wiki](https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation)) 
+  - [DAP-UI](https://github.com/rcarriga/nvim-dap-ui)
+  - [DAP-Virtual-Text](https://github.com/theHamsta/nvim-dap-virtual-text)
+
+Supported languages:
+  - .NETCore
+  - Unity
+  - C
+  - C++
+  - Rust
+

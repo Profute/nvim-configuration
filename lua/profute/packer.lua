@@ -1,5 +1,6 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
+-- Package Manager
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
@@ -13,6 +14,7 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
+    -- Colourscheme
     use({
         "folke/tokyonight.nvim",
         as = 'tokyonight',
@@ -21,11 +23,11 @@ return require('packer').startup(function(use)
         end
     })
 
-    --Treesitter based Highlighting
+    -- Treesitter based Highlighting
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
 
-    --Harpoon2 - Quickswitch between files
+    -- Harpoon2 - Quickswitch between files
     use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
     use {
         "ThePrimeagen/harpoon",
@@ -33,14 +35,14 @@ return require('packer').startup(function(use)
         requires = { { "nvim-lua/plenary.nvim" } }
     }
 
-    --History of Undos (<leader><F5>)
+    -- History of Undos (<leader><F5>)
     use "mbbill/undotree"
 
-    --Git functionality
+    -- Git functionality
     use "tpope/vim-fugitive"
     use 'lewis6991/gitsigns.nvim'
 
-    --lsp-zero and its configuration
+    -- lsp-zero and its configuration
     use {
         "williamboman/nvim-lsp-installer",
         "neovim/nvim-lspconfig",
@@ -63,7 +65,7 @@ return require('packer').startup(function(use)
             { 'hrsh7th/cmp-nvim-lua' },
             { 'saadparwaiz1/cmp_luasnip' },
 
-            --Snippets
+            -- Snippets
             { 'L3MON4D3/LuaSnip' },
             { 'rafamadriz/friendly-snippets' },
         }
@@ -71,7 +73,7 @@ return require('packer').startup(function(use)
     
     -- FileTree
     use 'nvim-tree/nvim-tree.lua'
-    --Icons
+    -- Icons
     use 'nvim-tree/nvim-web-devicons'
 
     -- Pairs brackets, braces, etc. automatically
@@ -95,4 +97,21 @@ return require('packer').startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true },
    }
+
+   -- Debugger
+   use {
+       'mfussenegger/nvim-dap',
+
+       requires = {
+           { 'Samsung/netcoredbg' },
+           { 'Unity-Technologies/vscode-unity-debug' },
+           { 'Microsoft/vscode-cpptools' },
+       },
+   }
+
+   -- Debugger UI
+   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+   use "theHamsta/nvim-dap-virtual-text"
+
 end)
+

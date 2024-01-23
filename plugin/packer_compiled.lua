@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  netcoredbg = {
+    loaded = true,
+    path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\netcoredbg",
+    url = "https://github.com/Samsung/netcoredbg"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs",
@@ -148,6 +153,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
+  },
+  ["nvim-dap-virtual-text"] = {
+    loaded = true,
+    path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap-virtual-text",
+    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -209,6 +229,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vscode-cpptools"] = {
+    loaded = true,
+    path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vscode-cpptools",
+    url = "https://github.com/Microsoft/vscode-cpptools"
+  },
+  ["vscode-unity-debug"] = {
+    loaded = true,
+    path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vscode-unity-debug",
+    url = "https://github.com/Unity-Technologies/vscode-unity-debug"
   },
   ["which-key.nvim"] = {
     config = { "\27LJ\2\nt\0\0\3\0\a\0\0156\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\15timeoutlen\ftimeout\6o\bvim\0" },
