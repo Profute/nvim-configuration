@@ -54,7 +54,14 @@ vim.keymap.set("n", "<leader>R", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- translates file into something that is executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
+-- opens a new window
 vim.keymap.set("n", "<S-t>", "<cmd> vsplit <CR>")
+
+-- navigate between windows
+vim.keymap.set("n", "<A-h>", "<C-W><C-h>")
+vim.keymap.set("n", "<A-j>", "<C-W><C-j>")
+vim.keymap.set("n", "<A-k>", "<C-W><C-k>")
+vim.keymap.set("n", "<A-l>", "<C-W><C-l>")
 
 -- opens a terminal
 --vim.keymap.set("n", "<S-t>", "<cmd> vsplit <cmd> term <CR>")
