@@ -230,6 +230,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-polyglot"] = {
+    loaded = true,
+    path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-polyglot",
+    url = "https://github.com/sheerun/vim-polyglot"
+  },
   ["vscode-cpptools"] = {
     loaded = true,
     path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vscode-cpptools",
