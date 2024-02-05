@@ -230,6 +230,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-nuget"] = {
+    loaded = true,
+    path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-nuget",
+    url = "https://github.com/markwoodhall/vim-nuget"
+  },
   ["vim-polyglot"] = {
     loaded = true,
     path = "C:\\Users\\peter\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-polyglot",
