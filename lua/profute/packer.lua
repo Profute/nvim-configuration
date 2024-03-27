@@ -71,7 +71,7 @@ return require('packer').startup(function(use)
             { 'rafamadriz/friendly-snippets' },
         }
     }
-    
+
     -- FileTree
     use 'nvim-tree/nvim-tree.lua'
     -- Icons
@@ -80,8 +80,8 @@ return require('packer').startup(function(use)
     -- Pairs brackets, braces, etc. automatically
     use {
         "windwp/nvim-autopairs",
-        require("nvim-autopairs").setup {} 
-    }   
+        require("nvim-autopairs").setup {}
+    }
 
     -- Show Keybindings
     use {
@@ -104,6 +104,7 @@ return require('packer').startup(function(use)
        'mfussenegger/nvim-dap',
 
        requires = {
+           { "nvim-neotest/nvim-nio" },
            { 'Samsung/netcoredbg' },
            { 'Unity-Technologies/vscode-unity-debug' },
            { 'Microsoft/vscode-cpptools' },
@@ -116,6 +117,14 @@ return require('packer').startup(function(use)
 
    -- Nuget support
    use 'markwoodhall/vim-nuget'
+
+   -- Comment shortcut
+   use {
+       'numToStr/Comment.nvim',
+       config = function()
+           require('Comment').setup()
+       end
+   }
 
 end)
 

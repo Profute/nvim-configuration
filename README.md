@@ -27,7 +27,7 @@ This is my personal [Neovim](https://github.com/neovim/neovim) configurartion, w
     - Git functionality directly from the Vim terminal
   - [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim)
     - Language server protocols - allows for language specific code completion, syntax highlighting, warnings etc.
-    - I have followed more or less copied the configuration/template from [The Primeagen](https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/configuration-templates.md#primes-config)
+    - I have more or less copied the configuration/template from [The Primeagen](https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/configuration-templates.md#primes-config)
   - [nvim-lsp-installer](https://github.com/williamboman/nvim-lsp-installer)
     - Required to use lsp-zero
   - [Mason](https://github.com/williamboman/mason.nvim)
@@ -43,6 +43,8 @@ This is my personal [Neovim](https://github.com/neovim/neovim) configurartion, w
     - Helpful extension for completing keybindings
   - [Lualine](https://github.com/nvim-lualine/lualine.nvim)
     - Highlighting of cmd
+  - [Comment](https://github.com/numToStr/Comment.nvim)
+    - Shortcut for pasting in comments
 
 ## Debugger
 The plugin used to support debugging is [DAP](https://github.com/mfussenegger/nvim-dap) with the following extensions and supported languages: 
