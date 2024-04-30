@@ -7,7 +7,7 @@ This is my personal [Neovim](https://github.com/neovim/neovim) configurartion, w
     - For Linux, there is a greater variety, so use whatever
   - A [Nerd Font](https://www.nerdfonts.com)
     - I personally used Inconsolata LGC Nerd Font
-    - Don't forget to set change the font in your termeinal to that from Nerd Font
+    - Don't forget to set change the font in your terminal to that from Nerd Font
 
 ## Colourscheme: 
   [Tokyo Night](https://github.com/folke/tokyonight.nvim)
